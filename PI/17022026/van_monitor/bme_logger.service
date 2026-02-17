@@ -1,0 +1,14 @@
+[Unit]
+Description=BME280 Logger Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/stefpi/bme_logger.py
+WorkingDirectory=/home/stefpi
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+user=stefpi
+
+[Install]
+WantedBy=multi-user.target
