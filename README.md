@@ -21,9 +21,12 @@ Completed:
 + database to archive the readings and allow queries via sqlite3
 + creation of the service bme_logger.service, starting on boot, always restarting, to maintain the readngs active
 + creation of a script(bme_graph.py) to visually review on a graph (bme_graph.png) the data in a specific time frame chose by user
++ implement heartbeat check and reset of Arduino
++ Install Tailscale on RaspberryPI, to allow remote access
+
 
 Next:
-- implement heartbeat check and reset of Arduino
+
 - hardware:
     - add and configure gsm/5g or hotspot access
 - implement android/iphone application to connect and interact with Raspberry
