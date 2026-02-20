@@ -56,17 +56,13 @@ Next:
 - possibility to configure the application with all the features or only with some of them, based on the hardware availability
 
 
+vanpi
+    config.py
+    database.py
+    init_db.py
 
-vanpi/
-│
-├── config.py
-├── database.py
-├── init_db.py
-│
-├── logger/
-│   ├── main.py
-│   ├── serial_reader.py
-│   └── parser.py
-│
-└── vanpi.db
-
+    logger
+        main.py
+        serial_reader.py
+        parser.py
+    dv_van.db
