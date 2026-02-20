@@ -53,4 +53,20 @@ Next:
   - water tank temperature (when the temperature is too low for too long)
   - water level (time to refill or drain)
 - implement the android/apple application to include the new features when added
-- possibility to configure the application with all the features or only with some of them, based on the hardware availability 
+- possibility to configure the application with all the features or only with some of them, based on the hardware availability
+
+
+
+vanpi/
+│
+├── config.py
+├── database.py
+├── init_db.py
+│
+├── logger/
+│   ├── main.py
+│   ├── serial_reader.py
+│   └── parser.py
+│
+└── vanpi.db
+
