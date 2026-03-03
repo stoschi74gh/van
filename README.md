@@ -17,19 +17,19 @@ Completed:
 + temperature/humidity/pressure sensor BME280
   connecting
   sketch for arduino to read the values and send them out
-+ implementing readings (bme_logger.py file to intercept the arduino outputs and store them to the database)
++ implementing readings (run_logger.py file to intercept the arduino outputs and store them to the database)
 + database to archive the readings and allow queries via sqlite3
-+ creation of the service bme_logger.service, starting on boot, always restarting, to maintain the readngs active
-+ creation of a script(bme_graph.py) to visually review on a graph (bme_graph.png) the data in a specific time frame chose by user
++ creation of the service bme_logger.service, starting on boot, always restarting, to maintain the readings active
 + implement heartbeat check and reset of Arduino
 + Install Tailscale on RaspberryPI, to allow remote access
-
++ Implement API to feed the remote application
++ Implement APK app to view the readings remotely
++ possibility to configure the application with all the features or only with some of them, based on the hardware availability
 
 Next:
 
 - hardware:
     - add and configure gsm/5g or hotspot access
-- implement android/iphone application to connect and interact with Raspberry
 - hardware
     - frame and motor to tilt solar panels
     - gps on raspberry
@@ -47,22 +47,10 @@ Next:
   - adding the data to the database
 - hardware
   - tanks level sensors
-- implement script for reading waer level sensosrs
+- implement script for reading water level sensors
 -  implement script for alerts
   - anti-thief (movement when it is supposed to be parked, sending location)
   - water tank temperature (when the temperature is too low for too long)
   - water level (time to refill or drain)
 - implement the android/apple application to include the new features when added
-- possibility to configure the application with all the features or only with some of them, based on the hardware availability
 
-
-vanpi
-    config.py
-    database.py
-    init_db.py
-
-    logger
-        main.py
-        serial_reader.py
-        parser.py
-    dv_van.db
