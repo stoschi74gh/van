@@ -11,7 +11,7 @@ void setup() {
   Serial.begin(9600);
   delay(1000);
 
-  Serial.println("Scanning BME280");
+  //Serial.println("Scanning BME280");
 
   if (!bme.begin(0x76)) {
     //Serial.println("Could not find BME280 sensor!");
@@ -24,12 +24,21 @@ void setup() {
 void loop() {
   float temp = bme.readTemperature();
   float hum  = bme.readHumidity();
-  float pres = bme.readPressure() / 100.0F;
+  float pres = bme.readPressure()/101325; // conversion hpa to atm
 
+  Serial.print("Arduino1");
+  Serial.print(",");
+  Serial.print("Inside");
+  Serial.print(",");
+  Serial.print("BME280");
+  Serial.print(",");
+  //Serial.print("T:");
   Serial.print(temp);
   Serial.print(",");
+  //Serial.print("H:");
   Serial.print(hum);
   Serial.print(",");
+  //Serial.print("P:");
   Serial.println(pres);
 
   delay(5000);
