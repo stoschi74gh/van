@@ -3,8 +3,8 @@ LAB Project for Arduino/Raspberry PI for camper/van application
 The hardware is going to be used on a camper/van
 - as weather station with history, with the possibility to be consulted remotely, queried on an app for android/iphone, or via ssh
 - as anti-thief system to track the van in case it gets stolen
-- water tanks temperature and levels check
-- tilt solar panels to get best electricity production
+- to monitor water tanks temperature and levels
+- to tilt solar panels to get best electricity production
 
 The scripts/functions will be manually managed/accessed via ssh, or via android/apple application
 
